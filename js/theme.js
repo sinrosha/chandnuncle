@@ -36,18 +36,11 @@
 			// Owl Carousel
 			this.initOwlCarousel();
 
-			//Isotope Filter
-			this.isotopeFilter();
-
-
 			// Accordion
 			this.initAccordion();
 
 			// Slide Effect
 			this.initSlideEffect();
-
-			// Tabs
-			this.initTabs();
 
 			// Menu nav
 			this.initMenuNavJs();
@@ -122,27 +115,6 @@
 				}
 			});
 		},
-		isotopeFilter: function(options) {
-			var $container = $('.isotope-filter');
-
-			$container.imagesLoaded(function() {
-				$container.isotope({
-					// options
-					filter: '.allservices',
-					itemSelector: '.isotope-item'
-				});
-			});
-			// filter items when filter link is clicked
-			$('#filter').on('click', 'a', function() {
-				$('#filter  li').removeClass('active');
-				$(this).parent('li').addClass('active');
-				var selector = $(this).attr('data-filter');
-				$container.isotope({
-					filter: selector
-				});
-				return false;
-			});
-		},
 		initAccordion: function(options) {
 			$(document).on('click', '.why-us li span', function(){
 				if($(this).text() == "+"){
@@ -161,9 +133,6 @@
 			$(document).on('mouseleave', '.team.hover-eff > div > div', function(){
 				$(this).find("span").slideUp(200);
 			});
-		},
-		initTabs: function(options) {
-			$('#myTab a:first').tab('show');
 		},
 		initMenuNavJs: function(options) {
 			$(document).on('click', 'li.submenu > a', function(e){
