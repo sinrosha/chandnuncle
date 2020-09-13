@@ -119,7 +119,7 @@ hgroup h2 + h1, hgroup h1 + h2{
 	text-decoration:underline;
 }
 #logo{
-	background-image:url(../img/logo.png);
+	background-image:url(../img/logo.jpg);
 	width:350px;
 	height:73px;
 	background-repeat:no-repeat;
