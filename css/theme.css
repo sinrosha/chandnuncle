@@ -254,6 +254,17 @@ hgroup h2 + h1, hgroup h1 + h2{
 	height: auto;
 	opacity: 1;
 }
+
+.our-services h4 {
+	line-height: 160%;
+}
+
+.our-services p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 160%;
+	text-align: left;
+}
 .navbar-main > li > .dropdown-menu > li > a{
 	border-top: 1px solid rgba(255, 255, 255, 0.4);
 	color: #fff;
@@ -342,13 +353,11 @@ hgroup h2 + h1, hgroup h1 + h2{
 
 .our-services div > a{
 	position:relative;
-	padding:15px 10px 0px 105px;
+	padding: 40px 50px;
 	display:block;
 	cursor:pointer;
 	border:1px solid;
 	border-right:none;
-	height:180px;
-	margin-bottom:40px;
 }
 .our-services div > a:after{
 	display:block;
@@ -809,6 +818,7 @@ footer p{
 	text-align:center;
 	color:#fff;
 	line-height:24px;
+	font-size: 14px;
 }
 .info-texts div > div > div{
 	position:relative;
@@ -1426,7 +1436,6 @@ body, .our-services div > a, .our-services div > a:hover .btn-default, .header-p
 
 .our-services div > a, .stats > div > div{
 	border-color:#eee;
-	min-height: 114px;
 }
 .header-padding div{
 	border-left-color:#eee;
@@ -1532,4 +1541,10 @@ footer, footer a, footer .copy{
 	box-shadow:none;
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
+}
+
+@media screen and (max-width: 767px) {
+	.our-services div > a {
+		padding: 30px 20px;
+	}
 }
